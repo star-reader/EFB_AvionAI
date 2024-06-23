@@ -1,0 +1,20 @@
+{
+  "name": "SKYline电子飞行包",
+  "short_name": "SKYline电子飞行包",
+  "theme_color": "#3A4D69",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#3A4D69",
+  "icons": [
+    {
+      "src": "./icons/logo-full.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "./icons/logo-full.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}

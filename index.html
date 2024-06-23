@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="zh-CN">
+  <!-- 2287 2023-11-28 修改了vite的一些行为属性。具体更新配置请见于github分支介绍或src/production/viteConfig.json-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta
+      name="description"
+      content="Avion-AI EFB is a system designed for AI-Powered flight EFB."
+    />
+    <meta
+      name="keywords"
+      content="SKYline,Avion-AI,EFB"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="manifest" href="/manifest.json">
+    <title>Avion-AI EFB System</title>
+    <style>
+      body{
+          touch-action: none;
+      }
+  </style>
+  </head>
+  <body style="overflow: hidden;">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
