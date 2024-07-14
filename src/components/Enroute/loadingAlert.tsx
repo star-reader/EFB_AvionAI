@@ -40,10 +40,10 @@ export default () => {
                 { hover && <div className="fixed left-0 top-0 w-full h-full z-[2] bg-[#253547] select-none"></div> }
                     <div className="absolute w-[300px] h-[100px] z-[50] t-calc-50-minus-50px-2 
                     bg-[#223958] left-calc-50-minus-150px rounded-md ani-[loading-alert]-4">
-                        <div className="relative w-full text-center text-white text-[20px] mt-3 select-none">下载航路图数据中</div>
+                        <div className="relative w-full text-center text-white text-[20px] mt-3 select-none">Downloading enroute map data</div>
                         <div className="relative w-[80%] left-[10%] mt-[10px]">
                             {
-                                error ? <span className="text=[17px] text-center text-red-500 select-none">数据加载失败，请重试</span> : 
+                                error ? <span className="text=[17px] text-center text-red-500 select-none">Data loading failed. Please try again</span> : 
                                 <Progress percent={percent} showInfo={false} size={[240, 10]} 
                                 strokeColor={{ '0%': '#108ee9', '100%': '#87d068' }} />
                             }

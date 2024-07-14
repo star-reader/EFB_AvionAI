@@ -83,14 +83,14 @@ export default () => {
               >
                   <PhoneDrag id={WINDOW} />
                   <div className="relative text-[19px] text-white text-center w-full 
-                  select-none phone:mt-[-30px] mb-[12px]">用户客制化</div>
+                  select-none phone:mt-[-30px] mb-[12px]">User Customization</div>
                   <div onClick={handleClose} className="absolute top-[4px] right-[16px] w-[60px] mt-[4px]
                                 text-[#66a5f7] text-[18px] select-none rounded text-center leading-[20px] 
-                                cursor-pointer duration-200 hover:text-[#6084d9] phone:mt-[5px]">&lt;&nbsp;返回</div>
+                                cursor-pointer duration-200 hover:text-[#6084d9] phone:mt-[5px]">&lt;&nbsp;Return</div>
                       <div className="relative common-window-height w-full overflow-x-hidden overflow-y-auto">
                       <Result
                             status="warning"
-                            title="客制化文档、检查单功能尚在开发中，在未来版本将正式上线发布"
+                            title="ustomization documents and checklist functions are under development and will be officially released in future versions"
                         />
                         <Divider />
                       </div>

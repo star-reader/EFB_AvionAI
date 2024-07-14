@@ -72,7 +72,7 @@ export default () => {
                     </div>
                     <div onClick={handleDetail} className="relative w-[50%] rounded-[4px] cursor-pointer bg-[#364670]
                      hover:bg-[#2b385a] duration-300 text-[15px] text-lime-500 leading-[35px] text-center"
-                     style={{'cursor': type === '机场' ? 'pointer' : 'not-allowed'}}>
+                     style={{'cursor': type === 'Airport' ? 'pointer' : 'not-allowed'}}>
                         Detail info
                     </div>
                 </div>

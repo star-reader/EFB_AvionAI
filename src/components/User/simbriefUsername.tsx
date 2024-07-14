@@ -35,21 +35,21 @@ export default () => {
                         autoComplete="off"
                     >
                         <Form.Item<SimbriefForm>
-                        label="用户名"
+                        label="Username"
                         name="username"
-                        rules={[{ required: true, message: '请填写用户名' }]}
+                        rules={[{ required: true, message: 'Please enter username' }]}
                         >
-                        <Input placeholder="Simbrief用户名，不是ID" />
+                        <Input placeholder="Simbrief username, not ID" />
                         </Form.Item>
                         <Form.Item
                         wrapperCol={{ span: 16, offset: 8 }}>
                         <Button className="new-flight-submit" type="primary" htmlType="submit">
-                            确定
+                            Confirm
                         </Button>
                         <Button className="new-flight-submit cancel" type="primary" htmlType="submit" 
                         style={{backgroundColor: 'orangered'
                         }} onClick={() => setShow(false)}>
-                            取消
+                            Cancel
                         </Button>
                         </Form.Item>
                     </Form>

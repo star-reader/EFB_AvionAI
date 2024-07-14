@@ -175,7 +175,7 @@ export default () => {
                         <div className="relative w-[12%] left-0 ml-[12px]"><Triangle theme="outline" size="28" fill="#ffffff"/></div>
                         <div className="relative w-[75%] ml-[15px] pt-[5px] leading-[14px]">
                             <div className="relative text-[14px] top-[4px] text-white">{d.ident}</div>
-                            <div className="relative mt-2 top-[-2px] text-[13px] text-gray-400">航路点</div>
+                            <div className="relative mt-2 top-[-2px] text-[13px] text-gray-400">Waypoint</div> {/* 航路点 */}
                         </div>
                     </div>
                   )

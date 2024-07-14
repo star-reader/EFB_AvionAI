@@ -25,11 +25,11 @@ export default ({location}: Props) => {
     }
 
     const options: SelectProps['options'] = [
-        {"label":"航路点", "value":"waypoint"},
-        {"label":"机场", "value":"airport"},
+        {"label":"Waypoint", "value":"waypoint"},
+        {"label":"Airport", "value":"airport"},
         {"label":"VOR", "value":"vor"},
         {"label":"NDB", "value":"ndb"},
-        {"label": "其他", "value": "other"}
+        {"label": "Other", "value": "other"}
     ]
 
     useEffect(() => {
@@ -55,31 +55,31 @@ export default ({location}: Props) => {
                         autoComplete="off"
                     >
                         <Form.Item<CustomWaypointForm>
-                        label="识别码"
+                        label="Identifier"
                         name="ident"
-                        rules={[{ required: true, message: '请填写航路点名称' }]}
+                        rules={[{ required: true, message: 'Please enter waypoint identifier' }]}
                         >
-                        <Input placeholder="例：DXG" />
+                        <Input placeholder="e.g., DXG" />
                         </Form.Item>
                         <Form.Item<CustomWaypointForm>
-                        label="名称"
+                        label="Name"
                         name="name"
                         >
-                        <Input placeholder="例：大兴" />
+                        <Input placeholder="e.g., Daxing" />
                         </Form.Item>
                         <Form.Item<CustomWaypointForm>
-                        label="类型"
+                        label="Type"
                         name="type"
-                        rules={[{ required: true, message: '请选择类型' }]}
+                        rules={[{ required: true, message: 'Please select type' }]}
                         >
                         <Select
-                        placeholder="选择航路点类型"
+                        placeholder="Select waypoint type"
                         optionFilterProp="children"
                         options={options}
                         />
                         </Form.Item>
                         <Form.Item<CustomWaypointForm>
-                        label="频率"
+                        label="Frequency"
                         name="frequency"
                         >
                         <Input />
@@ -88,12 +88,12 @@ export default ({location}: Props) => {
                         <Form.Item
                         wrapperCol={{ span: 16, offset: 8 }}>
                         <Button className="new-flight-submit" type="primary" htmlType="submit">
-                            创建
+                            Create
                         </Button>
                         <Button className="new-flight-submit cancel" type="primary" htmlType="submit" 
                         style={{backgroundColor: 'orangered'
                         }} onClick={() => setShow(false)}>
-                            取消
+                            Cancel
                         </Button>
                         </Form.Item>
                     </Form>

@@ -117,24 +117,24 @@ export default () => {
             show &&
             <div className="fixed w-full h-full flex left-0 top-0 justify-center items-center z-[40] select-none ">
                 <div className="absolute w-[300px] h-[180px] pt-2 rounded-md bg-[#2f4565] phone:top-[80px] manually-picker">
-                    <div className="relative text-[16px] text-white text-center">选择航路图数据</div>
+                    <div className="relative text-[16px] text-white text-center">Select Enroute Data</div>
                     <div onClick={handleClose} className="absolute top-[10px] right-[6px] mt-[3px] 
                         text-[13px] bg-[#e26e4b] rounded text-white select-none
                             text-center hover:bg-[#bd5d40] leading-[16px] 
-                        cursor-pointer duration-200 phone:mt-[5px] pt-[-2px] pb-[2px] pl-[6px] pr-[6px]">关闭
+                        cursor-pointer duration-200 phone:mt-[5px] pt-[-2px] pb-[2px] pl-[6px] pr-[6px]">Close
                     </div>
                     <div className="relative text-white mt-2 text-[14px] w-[80%] left-[10%]">请选择航路图数据所在的文件夹。每期最新的数据可在QQ群文件内获取</div>
                     {
-                        notAvail && <div className="relative text-[orangered] text-[14px] text-center">由于浏览器版本和权限控制原因，当前版本不支持文件选择。请更换设备或浏览器尝试</div>
+                        notAvail && <div className="relative text-[orangered] text-[14px] text-center">Due to browser version and permission control issues, the current version does not support file selection. Please try another device or browser.</div>
                     }
                     <div className="relative flex w-full mt-2 flex-nowrap justify-around items-center">
                         {
                             !notAvail &&
                             <div onClick={handleSelect} className="relative w-[100px] cursor-pointer text-center text-[15px] rounded h-[22px]
-                            leading-[22px] bg-[#51b2f7] duration-300 hover:bg-[#468fc4] text-black">选择文件夹</div>
+                            leading-[22px] bg-[#51b2f7] duration-300 hover:bg-[#468fc4] text-black">Select Folder</div>
                         }
                         <div onClick={downloadFromServer} className="relative w-[100px] cursor-pointer text-center text-[15px] rounded h-[22px]
-                            leading-[22px] bg-[#3bd47b] duration-300 hover:bg-[#39a566] text-black">从服务器下载</div>
+                            leading-[22px] bg-[#3bd47b] duration-300 hover:bg-[#39a566] text-black">Download from Server</div>
                     </div>
                     {
                         isDownloading &&
