@@ -15,6 +15,7 @@ import SettingPanel from './components/Setting/panel'
 import DocsPanel from './components/User/docPanel'
 import PinBoard from './components/Pinboard/pinboard'
 import LoginScreen from './layout/Login/LoginScreen'
+import WeatherInterface from './components/WeatherInterface'
 // import useOwnShip from './hooks/ownship/useOwnShip'
 import Welcome from './screens/loadingScreen'
 import DataManagement from './components/User/dataManagement'
@@ -91,6 +92,7 @@ function App() {
                   <PinBoard />
                   <DataManagement />
                   <ColorEFB />
+                  <WeatherInterface />
                 :
                 {getAccessToken()}
               </>
